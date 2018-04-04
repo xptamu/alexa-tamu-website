@@ -35,7 +35,7 @@ body, html {
     </a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#about" class="w3-bar-item w3-button"><i class="fas fa-question"></i> ABOUT</a>
       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTRIBUTE</a>
     </div>
@@ -69,39 +69,87 @@ body, html {
 <!-- About Section -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px" id="about">
   <h3 class="w3-center">ABOUT THE ALEXA SKILL</h3>
-  <p class="w3-center w3-large">The key features of the skill include:</p>
+  <p class="w3-center w3-large">Click on Each Icon to Learn More</p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-third">
-      <i class="fas fa-football-ball w3-margin-bottom w3-jumbo w3-center"></i>
+      <i class="fas fa-football-ball w3-margin-bottom w3-jumbo w3-center" onclick="document.getElementById('id01').style.display='block'" style="cursor:pointer"></i>
       <p class="w3-large">Sports</p>
       <p>Never miss another Texas A&M sporting event. Ask Alexa for any information about all of your favorite Texas A&M sports teams.</p>
     </div>
+    <div id="id01" class="w3-modal" onclick="this.style.display='none'">
+      <div class="w3-modal-content w3-animate-zoom" >
+        <div class="w3-container">
+          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+          <p>Sports info here</p>
+        </div>
+      </div>
+    </div>
     <div class="w3-third">
-      <i class="fas fa-utensils w3-margin-bottom w3-jumbo"></i>
+      <i class="fas fa-utensils w3-margin-bottom w3-jumbo" onclick="document.getElementById('id02').style.display='block'" style="cursor:pointer"></i>
       <p class="w3-large">Food</p>
       <p>Using this Alexa skill, you no longer ...</p>
     </div>
+    <div id="id02" class="w3-modal" onclick="this.style.display='none'">
+      <div class="w3-modal-content w3-animate-zoom">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+          <p>Food info here</p>
+        </div>
+      </div>
+    </div>
     <div class="w3-third">
-      <i class="fas fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <i class="fas fa-desktop w3-margin-bottom w3-jumbo w3-center" onclick="document.getElementById('id03').style.display='block'" style="cursor:pointer"></i>
       <p class="w3-large">Information Technology</p>
       <p>IT Help Desk information at the tip of your tongue.</p>
+    </div>
+    <div id="id03" class="w3-modal" onclick="this.style.display='none'">
+      <div class="w3-modal-content w3-animate-zoom">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+          <p>IT info here</p>
+        </div>
+      </div>
     </div>
   </div>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-third">
-      <i class="fas fa-bus w3-margin-bottom w3-jumbo"></i>
+      <i class="fas fa-bus w3-margin-bottom w3-jumbo" onclick="document.getElementById('id04').style.display='block'" style="cursor:pointer"></i>
       <p class="w3-large">Transportation</p>
       <p>Bus routes, parking garages, and parking locations.</p>
     </div>
+    <div id="id04" class="w3-modal" onclick="this.style.display='none'">
+      <div class="w3-modal-content w3-animate-zoom">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+          <p>Transportation info here</p>
+        </div>
+      </div>
+    </div>
     <div class="w3-third">
-      <i class="fas fa-map-marker-alt w3-margin-bottom w3-jumbo"></i>
+      <i class="fas fa-map-marker-alt w3-margin-bottom w3-jumbo" onclick="document.getElementById('id05').style.display='block'" style="cursor:pointer"></i>
       <p class="w3-large">Locations</p>
       <p>Building locations...</p>
     </div>
+    <div id="id05" class="w3-modal" onclick="this.style.display='none'">
+      <div class="w3-modal-content w3-animate-zoom">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+          <p>Location info here</p>
+        </div>
+      </div>
+    </div>
     <div class="w3-third">
-      <i class="fas fa-globe w3-margin-bottom w3-jumbo"></i>
+      <i class="fas fa-globe w3-margin-bottom w3-jumbo" onclick="document.getElementById('id06').style.display='block'" style="cursor:pointer"></i>
       <p class="w3-large">Traditions</p>
       <p>Learn about the deep traditions at Texas A&M.</p>
+    </div>
+    <div id="id06" class="w3-modal" onclick="this.style.display='none'">
+      <div class="w3-modal-content w3-animate-zoom">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id06').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+          <p>Traditions info here</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -135,7 +183,7 @@ body, html {
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/../images/Justin.png" alt="Justin" style="width:100%;height:325px">
+        <img src="/../images/Justin.png" alt="Justin" style="width:100%">
         <div class="w3-container">
           <h3>Justin Bevolo</h3>
           <p class="w3-opacity">Web Designer</p>
@@ -161,15 +209,15 @@ body, html {
 <!-- Promo Section "Statistics" -->
 <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
   <div class="w3-third">
-    <span class="w3-xxlarge">##+</span>
+    <span class="w3-xxlarge">8+</span>
     <br>Topics
   </div>
   <div class="w3-third">
-    <span class="w3-xxlarge">##+</span>
+    <span class="w3-xxlarge">700+</span>
     <br>Utterances
   </div>
   <div class="w3-third">
-    <span class="w3-xxlarge">##+</span>
+    <span class="w3-xxlarge">150+</span>
     <br>Responses
   </div>
 </div>
@@ -186,7 +234,7 @@ body, html {
 <!-- Contact Section -->
 <div class="w3-container w3-light-grey" style="padding:150px 16px;height:750px" id="contact">
   <h3 class="w3-center">CONTRIBUTE TO THE TAMU ALEXA SKILL</h3>
-  <p class="w3-center w3-large">We want your input. What else do you want Alexa to answer?</p>
+  <p class="w3-center w3-large">We want your input. What else would you like Alexa to answer?</p>
   <div style="margin-top:64px;margin:25%;margin-top:0%">
       <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> College Station, TX</p>
       <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> tamu-it-aldev@tamu.edu </p>
@@ -205,7 +253,7 @@ body, html {
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black" style="padding:64px">
+<footer class="w3-center w3-black" style="padding:128px">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 </footer>
 
